@@ -9,19 +9,23 @@ YI MicroPython 是一个MicroPython简化操作的模块，可以快速的链接
 ![](https://hwy-figure-bed.oss-cn-hangzhou.aliyuncs.com/image/20200807182401.png)
 
 已经将yi-mp上传到了**PyPI**,我们连接上ESP32的串口进行安装：
+
 ```
 import upip
 upip.install('yi-mp')
 ```
+
 ![](https://hwy-figure-bed.oss-cn-hangzhou.aliyuncs.com/image/20206166x1.png)
 
 这些库会自动安装到/lib下面，我们可以使用以下命令查看安装路径：
+
 ```
 >>> upip.get_install_path()
 '/lib'
 ```
 
 我们可以使用os命令查看下载好的文件
+
 ```
 import os
 os.listdir('lib')
@@ -31,11 +35,13 @@ os.listdir('lib')
 
 ## 使用
 导入emp_boot 设置启动模式
+
 ```
 import emp_boot
 ```
 
 设置**boot.py**的启动模式 这个操作会修改并覆盖**boot.py**文件
+
 ```
 emp_boot.set_boot_mode()
 ```
@@ -141,20 +147,24 @@ I (6886) network: event 1
 ![](https://hwy-figure-bed.oss-cn-hangzhou.aliyuncs.com/image/20200807173726.png)
 
 WebREPL和串口REPL是一样的，可以到下面这个网址链接操作,他可以通过网页数据命令，让我们摆脱对数据线的依赖。
+
 ```
 http://micropython.org/webrepl/
 ```
 
 WebREPL的默认密码是123456，你也可以使用一下命令进行重置：
+
 ```
 import emp_boot
 emp_boot.set_web_repl()
 ```
 
 可以使用如下代码查看文件的内容：
-````
+
+```
 print(open('/config/webrepl.pass').read())
 ```
+
 ![](https://hwy-figure-bed.oss-cn-hangzhou.aliyuncs.com/image/20200807182235.png)
 
 让我们摆脱数据线吧，啦啦啦~~~
