@@ -25,7 +25,7 @@ if __name__ == '__main__':
     print()
     print('       ---------------------------')
     print('       - Python YI MicroPython   -')
-    print('       -      version 1.0.3      -')
+    print('       -      version 1.0.4      -')
     print('       -     by YI               -')
     print('       ---------------------------')
     print()

@@ -14,7 +14,7 @@ except ImportError:
     import uwebsocket as websocket
 
 
-class WebREPL():
+class WebREPL:
     _instance = None
 
     @classmethod

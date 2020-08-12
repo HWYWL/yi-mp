@@ -4,9 +4,7 @@ YI MicroPython 是一个MicroPython简化操作的模块，可以快速的连接
 ## 安装
 如果你的ESP32安装了MicroPython的固件就可以使用，ESP8266我没有试过，手头没这个模块。
 
-**注意**：使用upip命令需要联网，所以使用需要你的ESP82模块连上WiFi才能安装模块。
-
-![](https://hwy-figure-bed.oss-cn-hangzhou.aliyuncs.com/image/20200807182401.png)
+**注意**：使用upip命令需要联网，所以使用需要你的ESP32模块连上WiFi才能安装模块。
 
 已经将yi-mp上传到了**PyPI**,我们连接上ESP32的串口进行安装：
 
@@ -100,7 +98,7 @@ I (880) modsocket: Initializing
 
        ---------------------------
        - Python YI MicroPython   -
-       -      version 1.0.3      -
+       -      version 1.0.4      -
        -     by YI               -
        ---------------------------
 

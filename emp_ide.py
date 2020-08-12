@@ -1,10 +1,10 @@
-import os
-import json
 import gc
+import os
 import sys
-from emp_webrepl import emp_sender
+
 from emp_utils import is_folder
 from emp_utils import traverse
+from emp_webrepl import emp_sender
 
 
 @emp_sender

@@ -1,6 +1,7 @@
 import gc
 import os
 
+
 class _const:
     class ConstError(TypeError):
         pass
@@ -11,6 +12,7 @@ class _const:
         else:
             self.__dict__[name] = value
 
+
 def is_folder(path):
     try:
         os.listdir(path)
@@ -18,9 +20,11 @@ def is_folder(path):
     except:
         return False
 
+
 def post_ip(ip):
     import urequests
     urequests.post('http://www.1zlab.com/ide/post/ip/?esp_ip=%s,' % ip)
+
 
 def traverse(path):
     n = dict(name=path, children=[])
@@ -28,8 +32,9 @@ def traverse(path):
         if is_folder(path + '/' + i):
             n['children'].append(traverse(path + '/' + i))
         else:
-            n['children'].append(dict(name=path + '/' +i))
+            n['children'].append(dict(name=path + '/' + i))
     return n
+
 
 def config_path():
     try:
@@ -43,6 +48,7 @@ def config_path():
 def webrepl_pass():
     with open('config/webrepl.pass', 'r') as f:
         return f.read()
+
 
 def rainbow(output, color=None):
     if color:
@@ -79,7 +85,6 @@ def print_as_a_list_item(index, title, subtile=None):
 
 
 def selection(hint, range):
-
     index = input(rainbow(hint, color='blue'))
     if int(index) > range or int(index) < 0:
         print(rainbow('out of range!', color='red'))
@@ -109,6 +114,7 @@ def mem_analyze(func):
 
     return wrapper
 
+
 def sync_time():
     import urequests
     from machine import RTC
@@ -118,4 +124,3 @@ def sync_time():
     # print(time)
     rtc.init(tuple(time['rtc']))
     print('after sync: ', rtc.datetime())
-    
