@@ -98,7 +98,7 @@ I (880) modsocket: Initializing
 
        ---------------------------
        - Python YI MicroPython   -
-       -      version 1.0.4      -
+       -      version 1.0.5      -
        -     by YI               -
        ---------------------------
 

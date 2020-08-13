@@ -25,7 +25,7 @@ if __name__ == '__main__':
     print()
     print('       ---------------------------')
     print('       - Python YI MicroPython   -')
-    print('       -      version 1.0.4      -')
+    print('       -      version 1.0.5      -')
     print('       -     by YI               -')
     print('       ---------------------------')
     print()
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     except ImportError:
         pass
     WebREPL.start(password=webrepl_pass())
-    from emp_ide import *'''
+    import ide'''
 
 
 def reboot():
