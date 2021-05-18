@@ -1,5 +1,6 @@
 # yi-mp
 YI MicroPython 是一个MicroPython简化操作的模块，可以快速的连接WiFi以及开启WebREPL。
+注意：此模块只支持microPython固件小于等于v1.13的版本。
 
 ## 安装
 如果你的ESP32安装了MicroPython的固件就可以使用，ESP8266我没有试过，手头没这个模块。
